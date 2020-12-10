@@ -1,12 +1,18 @@
 #include<iostream>
 using namespace std;
 
+//Function to swap
 void swap(int arr[],int a, int b)
 {
 	int temp=arr[a];
 	arr[a]=arr[b];
 	arr[b]=temp;
 }
+
+//Function to peform Dutch National Flag Problem 
+//0 :swap (arr[low] and arr[mid]), low++ mid++
+//1 :mid++
+//2 :swap (arr[mid] and arr[high]), high--
 
 void DnfSort(int arr[], int n)
 {
