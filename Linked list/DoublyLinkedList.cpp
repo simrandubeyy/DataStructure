@@ -211,7 +211,7 @@ int main()
 	head=AddAtEnd(head,99);
 	head=AddAtPosAfter(head,32,2);
 	head=AddAtPosBefore(head,23,3);
-    head=CreateEntireList(head);
+        head=CreateEntireList(head);
 	head=DelAtFirst(head);
 	head=DelAtLast(head);
 	head=DelAtPos(head,3);
