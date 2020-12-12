@@ -1,13 +1,15 @@
 #include <iostream>
 using namespace std;
 
+//Class Stack
 class Stack
 {
 	public:
 		int top=-1;
 		int n=6; 
 	    int arr[6];
-		
+	
+   //Function To Push the Element in Stack	
     void push()
     {
 	int x;
@@ -26,7 +28,7 @@ class Stack
 	}
     }
 
-    
+    //Function to Pop the Element
     void pop()
 	{
 		if(top==-1)
@@ -40,6 +42,7 @@ class Stack
 		}
 	}
 	
+	//Function to Get the top or peek
 	void peek()
 	{
 		if(top==-1)
@@ -52,6 +55,7 @@ class Stack
 		}
 	}
 
+    //Function to display all the item stack
     void display()
 	{
 		if(top==-1)
@@ -71,7 +75,6 @@ class Stack
 };
 
 
-
 int main()
 {
 	Stack s;
@@ -89,7 +92,7 @@ int main()
 	 cout<<"3.View Top \n";
 	 cout<<"4.Display \n";
 	 cout<<"5.Exit \n";
-	 
+	 //Input Choice
 	 cin>>ch;
 	 switch (ch)
 	 {
