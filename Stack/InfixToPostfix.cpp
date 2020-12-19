@@ -2,6 +2,8 @@
 #include<stack>
 using namespace std;
 
+//We are using STD stack in this program
+
 /* **********Rules for Infix to Postfix*******************
 Scan Expression from Left to Right
 Print OPERANDs as the arrive
@@ -9,14 +11,14 @@ If OPERATOR arrives & Stack is empty, push this operator onto the stack
 IF incoming OPERATOR has HIGHER precedence than the TOP of the Stack, push it on stack
 IF incoming OPERATOR has LOWER precedence than the TOP of the Stack, then POP and print the TOP. Then test the incoming operator against the NEW TOP of stack.
 IF incoming OPERATOR has EQUAL precedence with TOP of Stack, use ASSOCIATIVITY Rules.
-For ASSOCIATIVITY of LEFT to RIGHT –
+For ASSOCIATIVITY of LEFT to RIGHT â€“
 POP and print the TOP of stack, then push the incoming OPERATOR
-For ASSOCIATIVITY of RIGHT to LEFT –
+For ASSOCIATIVITY of RIGHT to LEFT â€“
 PUSH incoming OPERATOR on stack.
 At the end of Expression, POP & print all  OPERATORS from the stack
-IF incoming SYMBOL is ‘(‘ PUSH it onto Stack.
-IF incoming SYMBOL is ‘)’ POP the stack and print OPERATORs till ‘(‘ is found. POP that ‘(‘
-IF TOP of stack is ‘(‘ PUSH OPERATOR on Stack*/
+IF incoming SYMBOL is â€˜(â€˜ PUSH it onto Stack.
+IF incoming SYMBOL is â€˜)â€™ POP the stack and print OPERATORs till â€˜(â€˜ is found. POP that â€˜(â€˜
+IF TOP of stack is â€˜(â€˜ PUSH OPERATOR on Stack*/
 
 
 //Function to check the operator given by the user
@@ -126,7 +128,7 @@ int main()
 	
 	stack <char> s;
 	postfix=InfixToPostfix(s,infix);
-    cout<<endl<<"Postfix Expression After Conversion is : "<<postfix;
+        cout<<endl<<"Postfix Expression After Conversion is : "<<postfix;
 	
 	return 0;
 }
