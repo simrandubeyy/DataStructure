@@ -59,10 +59,10 @@ int main()
 	cout<<"Which number do you want to search \n";
 	cin>>data;
 	
-	int result=BinarySearch(arr,0,n,data);
+	int result=BinarySearch(arr,0,n-1,data);
 	
 	(result == -1) ? cout << "Element is not present in array \n"
-                   : cout << "Element is present at " << result<<" position \n";
+                   : cout << "Element is present at " << result<<" index \n";
 	
 	return 0;
 }
